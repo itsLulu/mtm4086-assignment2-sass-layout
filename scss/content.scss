@@ -1,0 +1,26 @@
+
+.container{
+	
+	outline:red;
+	width:100%;
+	max-width:1007px;
+	margin:0 auto;
+	height:auto;
+
+	ul{
+		li{
+			display:inline-block;
+			@include font-size(0.75);
+			color:$textcolor-blue;
+			margin-right:3px;
+		}
+	}
+}
+
+.col{
+
+}
+
+.col-2of3{
+	width:68%;
+}
