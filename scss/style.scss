@@ -18,3 +18,15 @@ body{
 
 @import 'content';
 
+.title1{}
+.title2{}
+.title3{@include font-size(1.2);}
+.title4{@include font-size(1.2); text-transform: uppercase; font-weight: 100;}
+.subtitle1{}
+.subtitle2{@include font-size(0.7)}
+
+.video-title{outline:1px #f00 solid; margin:0 2%;}
+.right{float: right;}
+a{text-decoration: none; color:$textcolor-second;}
+
+

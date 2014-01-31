@@ -388,6 +388,7 @@ header {
 @media only screen and (max-width: 767px) {
   ul.nav-secondary {
     display: none; } }
+/*Main Layout*/
 .container {
   outline: red;
   width: 100%;
@@ -430,6 +431,10 @@ header {
 .col-2of3 {
   width: 65.67%; }
 
+.col-5 {
+  width: 17.6%;
+  margin-left: 2%; }
+
 /*testing*/
 .container {
   outline: 2px #0f0 solid; }
@@ -455,9 +460,27 @@ header {
 
   .col-2:first-child, .col-3:first-child, .col-2of3:first-child {
     margin-left: 2%; } }
-h2 {
+.title3 {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.title4 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 100; }
+
+.subtitle2 {
+  font-size: 7px;
+  font-size: 0.7rem; }
+
+.video-title {
   outline: 1px #f00 solid;
-  margin: 0 3%; }
+  margin: 0 2%; }
 
 .right {
   float: right; }
+
+a {
+  text-decoration: none;
+  color: black; }

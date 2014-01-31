@@ -1,4 +1,5 @@
 
+/*Main Layout*/
 .container{
 	
 	outline:red;
@@ -27,12 +28,14 @@
 	.col-2:first-child, .col-3:first-child, .col-2of3:first-child{margin-left:0;}
 .col-1of3{width:31.33%; margin-left:3%;}
 .col-2of3{width:65.67%;}
+.col-5{width:17.6%; margin-left:2%;}
 
 
 /*testing*/
 .container{outline: 2px #0f0 solid;}
 .col-2of3, .col{outline:2px #f00 solid;}
 .col-2of3{height:200px;}
+
 
 /***************************************\
 		MEDIA QUERIES
@@ -47,5 +50,3 @@ and (max-width: 43em){
 
 }
 
-h2{outline:1px #f00 solid; margin:0 3%;}
-.right{float: right;}
