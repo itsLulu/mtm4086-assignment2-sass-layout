@@ -391,9 +391,10 @@ header {
 .container {
   outline: red;
   width: 100%;
-  max-width: 1007px;
+  max-width: 1200px;
   margin: 0 auto;
-  height: auto; }
+  height: auto;
+  float: left; }
   .container ul li {
     display: inline-block;
     font-size: 7.5px;
@@ -401,5 +402,62 @@ header {
     color: #0099ff;
     margin-right: 3px; }
 
+.col-container {
+  width: 100%;
+  float: left; }
+
+.col {
+  float: left; }
+
+.col-1 {
+  width: 100%; }
+
+.col-2 {
+  width: 48.5%;
+  margin-left: 3%; }
+
+.col-3 {
+  width: 31.33%;
+  margin-left: 3%; }
+
+.col-2:first-child, .col-3:first-child, .col-2of3:first-child {
+  margin-left: 0; }
+
+.col-1of3 {
+  width: 31.33%;
+  margin-left: 3%; }
+
 .col-2of3 {
-  width: 68%; }
+  width: 65.67%; }
+
+/*testing*/
+.container {
+  outline: 2px #0f0 solid; }
+
+.col-2of3, .col {
+  outline: 2px #f00 solid; }
+
+.col-2of3 {
+  height: 200px; }
+
+/***************************************\
+		MEDIA QUERIES
+\***************************************/
+/*tablet*/
+@media only screen and (max-width: 43em) {
+  body {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+  .col-2, .col-3, .col-1of3, .col-2of3 {
+    width: 96%;
+    margin-left: 2%;
+    float: none; }
+
+  .col-2:first-child, .col-3:first-child, .col-2of3:first-child {
+    margin-left: 2%; } }
+h2 {
+  outline: 1px #f00 solid;
+  margin: 0 3%; }
+
+.right {
+  float: right; }
