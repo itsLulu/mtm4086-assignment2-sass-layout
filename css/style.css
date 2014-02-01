@@ -449,7 +449,8 @@ header {
   margin-right: 1em; }
 
 .col1_1 {
-  width: 60%; }
+  width: 60%;
+  float: left; }
 
 /*testing*/
 .container {
@@ -464,6 +465,9 @@ header {
 /***************************************\
 		MEDIA QUERIES
 \***************************************/
+@media only screen and (max-width: 56em) {
+  .col1_1 {
+    width: 100%; } }
 /*tablet*/
 @media only screen and (max-width: 43em) {
   body {
@@ -533,14 +537,15 @@ header {
     clear: both; }
   .video-banner {
     *zoom: 1; }
-  .video-banner span.number {
-    font-weight: bold; }
   .video-banner a {
     text-decoration: none;
     color: #fff; }
 
 .video-title {
   margin: 0 2% 1em; }
+
+span.number {
+  font-weight: bold; }
 
 /*popular and upcoming news*/
 .news {

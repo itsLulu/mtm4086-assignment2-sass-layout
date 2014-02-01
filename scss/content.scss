@@ -29,7 +29,7 @@
 .col-5{width:17.6%; margin-left:2%;}
 
 .col1{float:left; margin-right:1em;}
-.col1_1{width:60%;}
+.col1_1{width:60%; float:left;}
 
 
 /*testing*/
@@ -43,7 +43,7 @@
 \***************************************/
 @media only screen 
 and (max-width: 56em){
-
+	.col1_1{width:100%;}
 }
 
 /*tablet*/
@@ -55,5 +55,7 @@ and (max-width: 43em){
 		.col-2:first-child, .col-3:first-child, .col-2of3:first-child{margin-left:2%;}
 
 	/*.img-1, .img-2, .img-3{text-align:center; margin:0 auto;}*/
+
+	
 }
 
