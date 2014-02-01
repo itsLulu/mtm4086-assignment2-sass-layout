@@ -1,15 +1,17 @@
 @import 'normalize';
 @import 'mixins';
 
-$font-primary: Helvetica, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700);
+
+$font-primary:'Source Sans Pro', "Helvetica Neue", sans-serif;
 $textcolor-prim: #666;
 $textcolor-second: #000;
-$textcolor-third: #333;
-$textcolor-blue: rgba(0,153,255,1);
+$textcolor-third: #aaa;
+$textcolor-blue: #0093cc;
 
 
 body{
-	font-size:100% Helvetica, sans-serif;
+	font-size:100% $font-primary;
 	background-color:#fff;
 	color:$textcolor-second;
 }
@@ -18,35 +20,8 @@ body{
 
 @import 'content';
 
-/*TEXT*/
-.title1{}
-.title2{font-weight: 700; @include font-size(1.2)}
-.title3{@include font-size(1.2);}
-.title4{@include font-size(1.2); text-transform: uppercase; font-weight: 100;}
-.subtitle1{font-weight: 700; @include font-size(0.9); text-transform: uppercase;}
-.subtitle2{@include font-size(0.7); font-weight:100;}
+@import 'footer';
 
 
-
-/*IMAGES*/
-.img-1{width:661px; height: 360px; background-color:#333;}
-.img-2{width:312px; height:170px; background-color:#333;}
-.img-3{width:191px;height: 104px; background-color: #333;}
-
-/*video banner*/
-.video-banner{
-	background-color:#000; padding: 1.5em 0 3em; color:#fff;
-	@include clearfix;
-
-	a{text-decoration: none; color:#fff;}
-}
-.video-title{margin:0 2% 1em;}
-span.number{font-weight: bold;}
-
-/*popular and upcoming news*/
-.news{padding:1.5em 0 3em;}
-
-/*OTHERS*/
-.right{float: right;}
 
 

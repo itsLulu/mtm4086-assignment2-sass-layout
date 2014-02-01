@@ -1,10 +1,11 @@
 /*responsive font size*/
 
-@mixin font-size($sizeValue: 1.4) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
-}
+    @mixin font-size($sizeValue: 1.4) {
+      font-size: ($sizeValue * 10) + px;
+      font-size: $sizeValue + rem;
+    }
 
+/*clearfix*/
     @mixin clearfix {
      // For modern browsers
       &:before,

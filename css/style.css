@@ -5,6 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700);
 article,
 aside,
 details,
@@ -353,37 +354,41 @@ th {
   padding: 0; }
 
 /*responsive font size*/
+/*clearfix*/
 body {
-  font-size: 100% Helvetica, sans-serif;
+  font-size: 100% "Source Sans Pro", "Helvetica Neue", sans-serif;
   background-color: #fff;
   color: black; }
 
 header {
-  height: 40px;
+  height: 4em;
   width: 100%;
   max-width: 1330px;
-  margin: 0 auto;
-  /*ul.nav-secondary{display: none;}*/ }
+  margin: 0 auto; }
   header #logo {
     width: 100px;
     background-color: #000; }
   header ul li {
     display: inline-block;
-    margin: 5px; }
+    margin: 5px;
+    color: #aaaaaa; }
+    header ul li:hover {
+      color: #0093cc; }
   header ul.nav-primary {
     float: left; }
     header ul.nav-primary li {
       text-transform: uppercase;
-      font-size: 8px;
-      font-size: 0.8rem;
-      color: #333; }
+      font-size: 8.75px;
+      font-size: 0.875rem; }
     header ul.nav-primary li:first-child {
-      color: #000; }
+      color: black; }
   header ul.nav-secondary, header ul.nav-ulity {
     float: right; }
     header ul.nav-secondary li, header ul.nav-ulity li {
       font-size: 7.5px;
       font-size: 0.75rem; }
+  header ul.nav-ulity li {
+    color: #0093cc; }
 
 @media only screen and (max-width: 43em) {
   ul.nav-secondary {
@@ -404,7 +409,6 @@ header {
     display: inline-block;
     font-size: 7.5px;
     font-size: 0.75rem;
-    color: #0099ff;
     margin-right: 3px; }
 
 .col-container {
@@ -440,6 +444,14 @@ header {
 .col-2of3 {
   width: 65.67%; }
 
+.col-2of4 {
+  width: 47%;
+  padding: 0 1% 0; }
+
+.col-1of4 {
+  width: 23.5%;
+  padding: 0 1% 0; }
+
 .col-5 {
   width: 17.6%;
   margin-left: 2%; }
@@ -459,30 +471,10 @@ header {
 .col-2of3, .col {
   outline: 2px #f00 solid; }
 
-.col-2of3 {
-  height: 200px; }
-
-/***************************************\
-		MEDIA QUERIES
-\***************************************/
-@media only screen and (max-width: 56em) {
-  .col1_1 {
-    width: 100%; } }
-/*tablet*/
-@media only screen and (max-width: 43em) {
-  body {
-    background-color: rgba(0, 0, 0, 0.3); }
-
-  .col-2, .col-3, .col-1of3, .col-2of3, .col-5 {
-    width: 96%;
-    margin-left: 2%;
-    float: none; }
-
-  .col-2:first-child, .col-3:first-child, .col-2of3:first-child {
-    margin-left: 2%; }
-
-  /*.img-1, .img-2, .img-3{text-align:center; margin:0 auto;}*/ }
 /*TEXT*/
+.smlinks {
+  color: #0093cc; }
+
 .title2 {
   font-weight: 700;
   font-size: 12px;
@@ -525,7 +517,7 @@ header {
   height: 104px;
   background-color: #333; }
 
-/*video banner*/
+/*VIDEO BANNER*/
 .video-banner {
   background-color: #000;
   padding: 1.5em 0 3em;
@@ -544,13 +536,57 @@ header {
 .video-title {
   margin: 0 2% 1em; }
 
-span.number {
-  font-weight: bold; }
-
-/*popular and upcoming news*/
-.news {
+/*MOST DUGGS & UPCOMING (NEWS)*/
+.container.news {
   padding: 1.5em 0 3em; }
+  .container.news .img-3 {
+    margin-right: 3%; }
 
 /*OTHERS*/
 .right {
+  float: right; }
+
+span.number {
+  font-weight: bold; }
+
+/***************************************\
+		MEDIA QUERIES
+\***************************************/
+@media only screen and (max-width: 56em) {
+  .col1_1 {
+    width: 100%; } }
+/*tablet*/
+@media only screen and (max-width: 43em) {
+  body {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+  .col-2, .col-3, .col-1of3, .col-2of3, .col-5 {
+    width: 96%;
+    margin-left: 2%;
+    float: none; }
+
+  .col-2:first-child, .col-3:first-child, .col-2of3:first-child {
+    margin-left: 2%; }
+
+  /*.img-1, .img-2, .img-3{text-align:center; margin:0 auto;}*/ }
+/*iPhone & iPad Diggs*/
+/*Daily Digg*/
+/*Social media*/
+/*footer nav bar*/
+.ftr ul {
+  padding: 0;
+  margin: 0; }
+  .ftr ul li {
+    color: #aaaaaa;
+    padding: 0 0.4em 0; }
+    .ftr ul li:first-child {
+      padding-left: 0; }
+    .ftr ul li:hover {
+      color: #0093cc;
+      cursor: pointer; }
+  .ftr ul li.nolink:hover {
+    color: #aaaaaa; }
+.ftr ul.nav-sitemap {
+  float: left; }
+.ftr ul.nav-legal {
   float: right; }

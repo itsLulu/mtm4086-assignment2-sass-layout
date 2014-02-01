@@ -1,6 +1,6 @@
 
 header{
-	height:40px;
+	height:4em;
 	width:100%;
 	max-width:1330px;
 	margin:0 auto;
@@ -14,6 +14,9 @@ header{
 		li{
 			display: inline-block;
 			margin:5px;
+			color:$textcolor-third;
+
+			&:hover{color:$textcolor-blue;}
 		}
 	}
 
@@ -21,11 +24,10 @@ header{
 		float:left;
 		li{
 			text-transform: uppercase;
-			@include font-size(0.8);
-			color:#333;
+			@include font-size(0.875);
 		}
 		li:first-child{
-			color:#000;
+			color:$textcolor-second;
 		}
 	}
 
@@ -33,7 +35,7 @@ header{
 		float:right;
 		li{ @include font-size(0.75);}
 	}
-	/*ul.nav-secondary{display: none;}*/
+	ul.nav-ulity li{color:$textcolor-blue;}
 }
 
 @media only screen and (max-width:43em){
