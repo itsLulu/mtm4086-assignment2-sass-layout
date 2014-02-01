@@ -409,11 +409,11 @@ header {
 
 .col-container {
   width: 100%;
-  float: left; }
-
-.col {
   float: left;
   margin: 2em 0 2em; }
+
+.col {
+  float: left; }
 
 .col-1 {
   width: 100%; }
@@ -443,6 +443,13 @@ header {
 .col-5 {
   width: 17.6%;
   margin-left: 2%; }
+
+.col1 {
+  float: left;
+  margin-right: 1em; }
+
+.col1_1 {
+  width: 60%; }
 
 /*testing*/
 .container {

@@ -15,9 +15,9 @@
 	}
 }
 
-.col-container{width:100%; float:left;}
+.col-container{width:100%; float:left; margin: 2em 0 2em;}
 
-.col{float:left; margin: 2em 0 2em;}
+.col{float:left;}
 
 .col-1{width:100%;}
 .col-2{width:48.5%; margin-left:3%;}
@@ -27,6 +27,9 @@
 	.col-1of3.img-3{margin-left:0; margin-right:3%;}
 .col-2of3{width:65.67%;}
 .col-5{width:17.6%; margin-left:2%;}
+
+.col1{float:left; margin-right:1em;}
+.col1_1{width:60%;}
 
 
 /*testing*/
