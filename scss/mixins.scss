@@ -7,7 +7,7 @@
 
 /*clearfix*/
     @mixin clearfix {
-     // For modern browsers
+     
       &:before,
       &:after {
         content:" ";
@@ -18,7 +18,6 @@
         clear:both;
       }
 
-      // For IE 6/7 (trigger hasLayout)
       & {
         *zoom:1;
       }

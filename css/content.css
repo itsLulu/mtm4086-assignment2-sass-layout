@@ -12,8 +12,8 @@ Syntax error: Undefined mixin 'clearfix'.
 8: 
 9: 	ul{
 10: 		li{
-11: 			display:inline-block;
-12: 			@include font-size(0.75);
+11: 			@include font-size(0.75);
+12: 			list-style:none;
 
 Backtrace:
 scss/content.scss:7:in `clearfix'
@@ -60,4 +60,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 7 of scss/content.scss, in `clearfix'\A         from line 7 of scss/content.scss\A \A 2: /*Main Layout*/\A 3: .container{\A 4: 	width:100%;\A 5: 	max-width:1200px;\A 6: 	margin:0 auto;\A 7: 	@include clearfix;\A 8: \A 9: 	ul{\A 10: 		li{\A 11: 			display:inline-block;\A 12: 			@include font-size(0.75);"; }
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 7 of scss/content.scss, in `clearfix'\A         from line 7 of scss/content.scss\A \A 2: /*Main Layout*/\A 3: .container{\A 4: 	width:100%;\A 5: 	max-width:1200px;\A 6: 	margin:0 auto;\A 7: 	@include clearfix;\A 8: \A 9: 	ul{\A 10: 		li{\A 11: 			@include font-size(0.75);\A 12: 			list-style:none;"; }

@@ -12,7 +12,8 @@ header{
 
 	ul{	
 		li{
-			display: inline-block;
+			float:left;
+			list-style:none;
 			margin:5px;
 			color:$textcolor-third;
 
@@ -35,8 +36,19 @@ header{
 		float:right;
 		li{ @include font-size(0.75);}
 	}
-	ul.nav-ulity li{color:$textcolor-blue;}
+	ul.nav-ulity{
+		li{color:$textcolor-blue;}
+			li.search{
+				color:transparent;
+				background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQAyLzI4LzEzsZYoFwAAAB50RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNS4xqx9I6wAAAQVJREFUOI2lk9FtAjEMhr+cOkBHgAEIjEAngE5QNuAkMkYe6AZlA24DViATsEn6EFc4JncS9JfycPZ/X2I7cWjFtAZ6YEOtATgS/MXEyTkD4BTkCOyt0eib4PsWqJuAXGVp7cX7oE7K0ZABmBP8iuBXwFxiGra2oDdKT+6Q4LeVI/gbsCWmM/fe9cClPlHd2Kp+I52zw5AeFV1l97ZKzvasCfqXNGhJTLNRZ8ktp0B6Is3RNnKDTXbGsCGmc3WymGZmYs0NnZjHLiS0yzkR/A5efyIPsPqJAPKGPmjUL7FP6vF/EdPP34ezf0wqpnfKjdblnvJhsXsONAF7HjQCew1kYPmwcL8de1yifM02fQAAAABJRU5ErkJggg==);
+				background-repeat: no-repeat;
+				background-position:top center;
+				height:20px;
+			}
+
+	}
 }
+
 
 @media only screen and (max-width:43em){
 	
