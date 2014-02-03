@@ -22,9 +22,12 @@ body{
 	color:$textcolor-second;
 }
 
+#logo{width:80px; height:54px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAeCAYAAAC8AUekAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABR0RVh0Q3JlYXRpb24gVGltZQA2LzUvMTO3y9KHAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAJFJREFUWIXtmFEKwCAMQ9ux+1/ZfW6wVl21hIy+z0lqCNJZVfo045tOrKXR2r3tkb1ZJmUexbmgTT/fI6iTV7G7xkgjjq63Fq3pQp18mUfhmVfZ302iNV3dL5OnoMyjKPMovIvZ19/7DNGaro46+TKPAjFQRAf3l446+ZUxsMf2zmJBnXyZR6HP5zM2qJOnNn8BqRsTOe7yrOsAAAAASUVORK5CYII=);}
+
 @import 'navigation';
 
-@import 'content';
+@import 'layout';
 
 @import 'footer';
 
