@@ -1,44 +1,24 @@
 /*
-Syntax error: Undefined variable: "$textcolor-third".
-        on line 15 of scss/footer.scss
+Syntax error: Undefined variable: "$bgcolor-third".
+        on line 12 of scss/footer.scss
 
+7: /*Social media*\/
+8: 
+9: /*footer nav bar*\/
 10: 
-11: .ftr{
-12: 	
-13: 	ul{
-14: 		padding:0; margin:0;
-15: 		li{color:$textcolor-third; padding:0 0.4em 0;
-16: 			&:first-child{padding-left:0;}
-17: 			&:hover{color:$textcolor-blue; cursor: pointer;}
-18: 		}
-19: 		li.nolink:hover{color:$textcolor-third;}
-20: 	}
+11: footer{
+12: 	background: $bgcolor-third;
+13: 	color:$textcolor-third;
+14: 	width:100%; margin:0 auto;
+15: 	@include clearfix;
+16: 
+17: 	.ftr-nav {float:left;width:100%;border-top:1px $border-color2 solid; padding:0.5em 0 0.5em;}
 
 Backtrace:
-scss/footer.scss:15
+scss/footer.scss:12
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -80,4 +60,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$textcolor-third\".\A         on line 15 of scss/footer.scss\A \A 10: \A 11: .ftr{\A 12: 	\A 13: 	ul{\A 14: 		padding:0; margin:0;\A 15: 		li{color:$textcolor-third; padding:0 0.4em 0;\A 16: 			&:first-child{padding-left:0;}\A 17: 			&:hover{color:$textcolor-blue; cursor: pointer;}\A 18: 		}\A 19: 		li.nolink:hover{color:$textcolor-third;}\A 20: 	}"; }
+  content: "Syntax error: Undefined variable: \"$bgcolor-third\".\A         on line 12 of scss/footer.scss\A \A 7: /*Social media*/\A 8: \A 9: /*footer nav bar*/\A 10: \A 11: footer{\A 12: 	background: $bgcolor-third;\A 13: 	color:$textcolor-third;\A 14: 	width:100%; margin:0 auto;\A 15: 	@include clearfix;\A 16: \A 17: 	.ftr-nav {float:left;width:100%;border-top:1px $border-color2 solid; padding:0.5em 0 0.5em;}"; }

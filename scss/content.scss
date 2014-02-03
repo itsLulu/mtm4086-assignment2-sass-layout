@@ -27,8 +27,8 @@
 .col-1of3{width:31.33%; margin-left:3%;}
 	.col-1of3.img-3{margin-left:0; margin-right:3%;}
 .col-2of3{width:65.67%;}
-.col-2of4{width:47%; padding:0 1% 0;}
-.col-1of4{width:23.5%; padding:0 1% 0;}
+.col-2of4{width:43%; padding:0 2% 0;}
+.col-1of4{width:22%; padding:0 2% 0;}
 .col-5{width:17.6%; margin-left:2%;}
 
 .col1{float:left; margin-right:1em;}
@@ -37,13 +37,14 @@
 
 /*testing
 .container{outline: 2px #0f0 solid;}
-.col-2of3, .col{outline:2px #f00 solid;}*/
+.col-2of3, .col{outline:5px #f00 solid;}*/
 
 /*STORY ACTIONS*/
 .story-action{
+	visibility: hidden;
 	ul.story-action-sharelinks{
 		position: relative; margin-left: -40px;
-		li{background-repeat:no-repeat; background-position:left; padding:2px 5px 1px 18px; margin:0 4px 0 0; color:$textcolor-blue;}
+		li{	background-repeat:no-repeat; background-position:left; padding:2px 5px 1px 18px; margin:0 4px 0 0; color:$textcolor-blue; cursor:pointer;}
 		.digg {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAWElEQVQoz2NgGByg55IBEB8A4gRSNToA8X8gfkCqxgaoxvOkaBIA4g9QjQtI0TQBqgkbvoBL438C+Dy5GgvI0fgeHE1kacQTOGQ4E6E5ABwIqJrug8WpAQCT26AaKcN0gwAAAABJRU5ErkJggg==);}
 		.save{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAMElEQVQoz2NgGKKg59J/vHhUIxx/gGKSNRpAMUkaE5DEEojV2IBFvIGQxgVkyZECAAXXm/+FDlQ3AAAAAElFTkSuQmCC);}
 		.facebook{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAUElEQVQoz2NgGDjQc6kBiP8TgRvQNf4nGhOpcQMQOwCxANxVRGpUgGo8AMQPiNeIzf8ENC4A24QtAAloPAAPQYhTG2juVNprbCBSYwNFKRQAu8j8Ch+VL9sAAAAASUVORK5CYII=);}
@@ -52,18 +53,22 @@
 }
 .news{
 	ul.story-action-sharelinks{
-		li{color:transparent; padding:0; margin:0;
+		li{color:transparent; padding:0; margin:0; cursor:pointer;
 		&:nth-child(4){margin-left:-22px;}
 		}
 	}
 }
+div:hover > .story-action {visibility: visible;}
+
 
 
 /*VIDEO BANNER*/
 .video-banner{
-	background-color:#000; padding: 1.5em 0 3em; color:#fff;
+	background-color:$bgcolor-second; padding: 1.5em 0 3em; color:#fff;
 	@include clearfix;
 	a{text-decoration: none; color:#fff;}
+	.digg-label{color:#fff;}
+	.sectiontitle{padding:0 2%;}
 }
 .video-title{margin:0 2% 1em;}
 
@@ -78,16 +83,46 @@
 	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVQIHWN4DQAA7QDsW2L9ygAAAABJRU5ErkJggg==);
 	background-repeat:repeat-y;
 	background-position:right;
+	position:relative;
+
+	.col-1 {width:90%; margin:0 5% 0; padding:1em 0 1em 0;border-bottom:1px solid $border-color; }
+	.title{width:80%; margin-top:0px;}
+	.sectiontitle{padding-left:2%;}
 }
 
 
 /*TEXT*/
-.title1{}
-.title2{font-weight: 700; @include font-size(1.2)}
-.title3{@include font-size(1.2);}
-.title4{@include font-size(1.2); text-transform: uppercase; font-weight: 100;}
-.subtitle1{font-weight: 700; @include font-size(0.9); text-transform: uppercase;}
-.subtitle2{@include font-size(0.7); font-weight:100;}
+.title{
+		font-weight:800;
+		line-height:1em;
+		font-family:'Raleway', sans-serif;
+
+		/*transition set up for hover animation*/
+		-transition-delay:0s;
+		-moz-transition-delay: 0s;
+		-webkit-transition-delay: 0s;
+		
+		-transition-duration: 0.15s;
+		-moz-transition-duration:0.15s;
+		-webkit-transition-duration: 0.15s;
+
+		-transition-property: color;
+		-moz-transition-property: color;
+		-webkit-transition-property: color;
+
+		-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+		-moz-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+		-webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+	&:hover{color:$textcolor-blue;}
+
+	&.video-title{@include font-size(1);line-height:1.3em;padding-top:1em;}
+}
+
+.sectiontitle{text-transform: uppercase; font-weight:100;@include font-size(1.2);}
+.story-headline{font-weight: 700; @include font-size(0.9); text-transform: uppercase;}
+.story-meta, .digg-label{@include font-size(0.75);color:$textcolor-prime;}
+span.number{font-weight: bold;}
 
 /*IMAGES*/
 .img-1{width:661px; height: 360px; background-color:#333;}
@@ -96,7 +131,7 @@
 
 /*OTHERS*/
 .right{float: right;}
-span.number{font-weight: bold;}
+
 
 
 /***************************************\

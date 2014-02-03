@@ -2,8 +2,10 @@
 header{
 	height:4em;
 	width:100%;
-	max-width:1330px;
 	margin:0 auto;
+	border-bottom:1px $border-color solid;
+
+	nav{max-width:1330px; margin:0 auto; }
 
 	#logo{
 		width:100px;
