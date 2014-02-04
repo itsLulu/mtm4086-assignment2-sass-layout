@@ -16,7 +16,7 @@
 
 }
 
-.col-container{width:100%; float:left; margin: 2em 0 2em; }
+.col-container{width:100%; max-width:1200px; float:left; margin: 2em 0 2em; }
 
 .col{float:left;}
 
@@ -34,10 +34,6 @@
 .col1{float:left; margin-right:1em;}
 .col1_1{width:60%; float:left;}
 
-
-/*testing
-.container{outline: 2px #0f0 solid;}
-.col-2of3, .col{outline:5px #f00 solid;}*/
 
 /*STORY ACTIONS*/
 .story-action{
@@ -66,9 +62,11 @@ div:hover > .story-action {visibility: visible;}
 .video-banner{
 	background-color:$bgcolor-dark; padding: 1.5em 0 3em; color:#fff;
 	@include clearfix;
+	
 	a{text-decoration: none; color:#fff;}
 	.digg-label{color:#fff;}
 	.sectiontitle{padding:0 2%;}
+
 }
 .video-title{margin:0 2% 1em;}
 
@@ -120,7 +118,8 @@ div:hover > .story-action {visibility: visible;}
 }
 
 .sectiontitle{text-transform: uppercase; font-weight:100;@include font-size(1.2);}
-.story-headline{font-weight: 700; @include font-size(0.9); text-transform: uppercase;}
+.subtitle1{@include font-size(0.9);}
+.story-headline{font-weight: 700; @include font-size(1.5); text-transform: uppercase;}
 .story-meta, .digg-label{@include font-size(0.75);color:$textcolor-prime;}
 span.number{font-weight: bold;}
 
@@ -128,6 +127,11 @@ span.number{font-weight: bold;}
 .img-1{width:661px; height: 360px; background-color:#333;}
 .img-2{width:312px; height:170px; background-color:#333;}
 .img-3{width:191px;height: 104px; background-color: #333;}
+
+
+.img-1{width:661px; height: 360px; background-image:url(http://lorempixel.com/output/city-q-c-640-480-6.jpg); background-size:100%;}
+.img-2{width:312px; height:170px; background-image:url(http://lorempixel.com/output/city-q-g-640-480-7.jpg); background-size:100%;}
+.img-3{width:191px; height:104px; background-image:url(http://lorempixel.com/output/technics-q-c-640-480-2.jpg); background-size:100%;}
 
 /*OTHERS*/
 .right{float: right;}
@@ -151,7 +155,7 @@ and (max-width: 43em){
 		.col-2:first-child, .col-3:first-child, .col-2of3:first-child{margin-left:2%;}
 
 	/*.img-1, .img-2, .img-3{text-align:center; margin:0 auto;}*/
-
+	.img-1, .img-2, .img-3{width:661px; height:360px; background-position:50% 50%;}
 	
 }
 
