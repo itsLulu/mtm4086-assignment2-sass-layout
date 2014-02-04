@@ -11,8 +11,8 @@ Syntax error: Undefined variable: "$border-color".
 7: 
 8: 	nav{max-width:1330px; margin:0 auto; }
 9: 
-10: 	#logo{
-11: 		width:100px;
+10: #logo{width:80px; height:54px;
+11: 	background-repeat:no-repeat; background-position: 50% 50%;
 
 Backtrace:
 scss/navigation.scss:6
@@ -53,17 +53,15 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:235:in `watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin.rb:107:in `method_missing'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:463:in `watch_or_update'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:326:in `process_result'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:41:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:21:in `parse!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/bin/sass:13:in `<top (required)>'
-C:/Ruby193/bin/sass:23:in `load'
-C:/Ruby193/bin/sass:23:in `<main>'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$border-color\".\A         on line 6 of scss/navigation.scss\A \A 1: \A 2: header{\A 3: 	height:4em;\A 4: 	width:100%;\A 5: 	margin:0 auto;\A 6: 	border-bottom:1px $border-color solid;\A 7: \A 8: 	nav{max-width:1330px; margin:0 auto; }\A 9: \A 10: 	#logo{\A 11: 		width:100px;"; }
+  content: "Syntax error: Undefined variable: \"$border-color\".\A         on line 6 of scss/navigation.scss\A \A 1: \A 2: header{\A 3: 	height:4em;\A 4: 	width:100%;\A 5: 	margin:0 auto;\A 6: 	border-bottom:1px $border-color solid;\A 7: \A 8: 	nav{max-width:1330px; margin:0 auto; }\A 9: \A 10: #logo{width:80px; height:54px;\A 11: 	background-repeat:no-repeat; background-position: 50% 50%;"; }

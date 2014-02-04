@@ -359,12 +359,8 @@ th {
 body {
   font-size: 100% "Source Sans Pro", "Helvetica Neue", sans-serif;
   background-color: white;
-  color: white; }
-
-#logo {
-  width: 80px;
-  height: 54px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAeCAYAAAC8AUekAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABR0RVh0Q3JlYXRpb24gVGltZQA2LzUvMTO3y9KHAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAJFJREFUWIXtmFEKwCAMQ9ux+1/ZfW6wVl21hIy+z0lqCNJZVfo045tOrKXR2r3tkb1ZJmUexbmgTT/fI6iTV7G7xkgjjq63Fq3pQp18mUfhmVfZ302iNV3dL5OnoMyjKPMovIvZ19/7DNGaro46+TKPAjFQRAf3l446+ZUxsMf2zmJBnXyZR6HP5zM2qJOnNn8BqRsTOe7yrOsAAAAASUVORK5CYII=); }
+  color: black;
+  min-width: 1080px; }
 
 header {
   height: 4em;
@@ -375,8 +371,12 @@ header {
     max-width: 1330px;
     margin: 0 auto; }
   header #logo {
-    width: 100px;
-    background-color: black; }
+    width: 80px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAeCAYAAAC8AUekAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABR0RVh0Q3JlYXRpb24gVGltZQA2LzUvMTO3y9KHAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAJFJREFUWIXtmFEKwCAMQ9ux+1/ZfW6wVl21hIy+z0lqCNJZVfo045tOrKXR2r3tkb1ZJmUexbmgTT/fI6iTV7G7xkgjjq63Fq3pQp18mUfhmVfZ302iNV3dL5OnoMyjKPMovIvZ19/7DNGaro46+TKPAjFQRAf3l446+ZUxsMf2zmJBnXyZR6HP5zM2qJOnNn8BqRsTOe7yrOsAAAAASUVORK5CYII=);
+    float: left; }
   header ul li {
     float: left;
     list-style: none;
@@ -391,7 +391,7 @@ header {
       font-size: 8.75px;
       font-size: 0.875rem; }
     header ul.nav-primary li:first-child {
-      color: white; }
+      color: black; }
   header ul.nav-secondary, header ul.nav-ulity {
     float: right; }
     header ul.nav-secondary li, header ul.nav-ulity li {
@@ -628,7 +628,7 @@ span.number {
 .img-1 {
   width: 661px;
   height: 360px;
-  background-image: url(http://lorempixel.com/output/city-q-c-640-480-6.jpg);
+  background-image: url(http://lorempixel.com/output/cats-q-c-640-480-5.jpg);
   background-size: 100%; }
 
 .img-2 {
@@ -640,37 +640,13 @@ span.number {
 .img-3 {
   width: 191px;
   height: 104px;
-  background-image: url(http://lorempixel.com/output/technics-q-c-640-480-2.jpg);
+  background-image: url(http://lorempixel.com/output/nightlife-q-c-640-480-4.jpg);
   background-size: 100%; }
 
 /*OTHERS*/
 .right {
   float: right; }
 
-/***************************************\
-		MEDIA QUERIES
-\***************************************/
-@media only screen and (max-width: 56em) {
-  .col1_1 {
-    width: 100%; } }
-/*tablet*/
-@media only screen and (max-width: 43em) {
-  body {
-    background-color: rgba(0, 0, 0, 0.3); }
-
-  .col-2, .col-3, .col-1of3, .col-2of3, .col-5 {
-    width: 96%;
-    margin-left: 2%;
-    float: none; }
-
-  .col-2:first-child, .col-3:first-child, .col-2of3:first-child {
-    margin-left: 2%; }
-
-  /*.img-1, .img-2, .img-3{text-align:center; margin:0 auto;}*/
-  .img-1, .img-2, .img-3 {
-    width: 661px;
-    height: 360px;
-    background-position: 50% 50%; } }
 /*iPhone & iPad Diggs*/
 /*Daily Digg*/
 /*Social media*/

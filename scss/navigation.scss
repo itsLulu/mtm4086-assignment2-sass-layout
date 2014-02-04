@@ -7,10 +7,11 @@ header{
 
 	nav{max-width:1330px; margin:0 auto; }
 
-	#logo{
-		width:100px;
-		background-color:$bgcolor-dark;
-	}
+#logo{width:80px; height:54px;
+	background-repeat:no-repeat; background-position: 50% 50%;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAeCAYAAAC8AUekAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABR0RVh0Q3JlYXRpb24gVGltZQA2LzUvMTO3y9KHAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAJFJREFUWIXtmFEKwCAMQ9ux+1/ZfW6wVl21hIy+z0lqCNJZVfo045tOrKXR2r3tkb1ZJmUexbmgTT/fI6iTV7G7xkgjjq63Fq3pQp18mUfhmVfZ302iNV3dL5OnoMyjKPMovIvZ19/7DNGaro46+TKPAjFQRAf3l446+ZUxsMf2zmJBnXyZR6HP5zM2qJOnNn8BqRsTOe7yrOsAAAAASUVORK5CYII=);
+	float:left;
+}
 
 	ul{	
 		li{
@@ -30,7 +31,7 @@ header{
 			@include font-size(0.875);
 		}
 		li:first-child{
-			color:$textcolor-second;
+			color:$textcolor-prime;
 		}
 	}
 
