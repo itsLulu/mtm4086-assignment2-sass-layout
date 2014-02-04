@@ -64,7 +64,7 @@ div:hover > .story-action {visibility: visible;}
 
 /*VIDEO BANNER*/
 .video-banner{
-	background-color:$bgcolor-second; padding: 1.5em 0 3em; color:#fff;
+	background-color:$bgcolor-dark; padding: 1.5em 0 3em; color:#fff;
 	@include clearfix;
 	a{text-decoration: none; color:#fff;}
 	.digg-label{color:#fff;}

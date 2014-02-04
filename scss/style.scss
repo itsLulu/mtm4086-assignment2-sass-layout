@@ -5,20 +5,20 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,800,700,900,600);
 
 $font-primary:'Source Sans Pro', "Helvetica Neue", sans-serif;
-$textcolor-prime: #666;
-$textcolor-second: #000;
+$textcolor-prime: #000;
+$textcolor-second: #fff;
 $textcolor-third: #7a7a7a;
 $textcolor-blue: #0093cc;
 $border-color:#ebebeb;
 $border-color2:#c0c0c0;
-$bgcolor-prim: #fff;
-$bgcolor-second: #000;
+$bgcolor-light: #fff;
+$bgcolor-dark: #000;
 $bgcolor-third:#d6d6d6;
 
 
 body{
 	font-size:100% $font-primary;
-	background-color:#fff;
+	background-color:$bgcolor-light;
 	color:$textcolor-second;
 }
 
